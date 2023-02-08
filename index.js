@@ -3,6 +3,7 @@ var cors = require("cors");
 var mongodb = require("mongodb");
 const mongoClient = mongodb.MongoClient;
 var app = express();
+let port = 8000
 let dburl =
   "mongodb+srv://kabir:kabir21@cluster0.chfc7rh.mongodb.net/?retryWrites=true&w=majority";
 app.use(cors());
@@ -109,6 +110,6 @@ app.post("/signup", (req, res) => {
   });
 });
 
-app.listen(8000, () => {
+app.listen(port, () => {
   console.log("Server started");
 });
