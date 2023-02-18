@@ -5,7 +5,7 @@ const mongoClient = mongodb.MongoClient;
 const port = 8000;
 var app = express();
 let dburl =
-  "mongodb+srv://kabir:kabir21@cluster0.chfc7rh.mongodb.net/?retryWrites=true&w=majority";
+  "";
 app.use(cors());
 app.use(express.json());
 
